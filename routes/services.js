@@ -18,7 +18,7 @@ router.post('/', verifyToken, async (req, res) => {
     res.json({ success: true, service });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Erreur lors de l'ajout du service.' });
+    res.status(500).json({ error: "Erreur lors de l'ajout du service." });
   }
 });
 
