@@ -1,0 +1,19 @@
+{
+  "name": "service-connect-backend",
+  "version": "1.0.0",
+  "description": "Backend API pour Service Connect",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0"
+  }
+}
