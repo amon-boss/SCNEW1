@@ -32,7 +32,8 @@ router.post('/login', async (req, res) => {
   try {
     const { identifier, password } = req.body;
 
-    const user = await User.findOne({ lastname: identifier });
+    // Modif ici : on cherche l'utilisateur par phone (identifiant)
+    const user = await User.findOne({ phone: identifier });
     if (!user || user.password !== password) {
       return res.status(401).json({ error: 'Identifiants invalides' });
     }
