@@ -5,6 +5,8 @@ const ServiceSchema = new mongoose.Schema({
   lastname: { type: String },
   firstname: { type: String },
   content: { type: String, required: true },
+  location: { type: String, required: true }, // Nouveau champ pour le lieu
+  category: { type: String, required: true }, // Nouveau champ pour la catégorie (ex: 'Plomberie', 'Électricité', 'Jardinage')
   createdAt: { type: Date, default: Date.now }
 });
 
